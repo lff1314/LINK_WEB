@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>港口人工智能-集装箱智能化-港口智能化</title>
+    <link rel="icon" href="http://dinkpic1.51ai.pro/syc.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="version" content="1.2.2" />
+    <meta charset="utf-8" name="keywords" content="港口人工智能,集装箱智能化,港口智能化">
+    <meta charset="utf-8" name="description" content="港口人工智能，集装箱智能化，港口智能化的第一太平洋AI实现集装箱智能识别，港口提效，智能化港口码头。第一太平洋AI作为DINK深度学习框架发布者，TensorFlow源码贡献团队，掌握港口人工智能，集装箱智能化，港口智能化，智能化港口码头底层技术。在港口人工智能，集装箱智能化中，集装箱智能识别，港口智能决策，智能规划经验丰富。">
+    <link rel="canonical" href="http://fp-ai.com"/>
+    <link rel="stylesheet" href="http://dinkweb1.51ai.pro/bootstrap.min.css">
+    <link rel="stylesheet" href="http://dinkweb1.51ai.pro/style3.7.css">
+    <link rel="stylesheet" href="http://dinkweb1.51ai.pro/layui.css">
+    <script src="http://dinkweb1.51ai.pro/jquery.min.js"></script>
+    <script src="http://dinkweb1.51ai.pro/jquery.mousewheel.min.js"></script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https'){
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else{
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+<body>
+<div id="preloader">
+    <div class="loader">
+        <img src="http://dinkpic1.51ai.pro/loader.gif" alt="为港口提效，智能化港口码头">
+    </div>
+</div>
+
+<header class="header-bg">
+    <div class="container main-menu">
+        <nav class="navbar navbar-default">
+            <div class="container-fliud">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <!--<a href="http://fp-ai.com/home.html" class="navbar-brand logo-middle visible-lg visible-md"></a>-->
+                    <!--<a class="logo-cut visible-lg visible-md"></a>-->
+                    <a href="http://fp-ai.com/home.html" class="navbar-brand logo"></a>
+                    <a class="logo-cut  visible-lg visible-md"></a>
+                    <a href="http://fp-ai.com/home.html" class="navbar-brand logo-right visible-lg visible-md"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="mob-menu">
+                        <div class="right-nav">
+                            <input id="search" type="text" placeholder="想搜索什么呢" onfocus="this.placeholder = ''" onblur="this.placeholder = '想搜索什么呢'" link="article.html" onKeyDown="openNew(this, 1)">
+                            <span id="search-icon" class="icon-search hidden-xs hidden-sm" link="article.html" onclick="search(this)"></span>
+                            <!--<a id="logout" href="#" class="reserve box foo" style="border: none;display: none" onclick="cancel()">注销</a>-->
+                            <!--<a href="#" id="login" class="reserve box foo" data-toggle="modal" data-target="#loginModal">登录</a>-->
+                            <a id="username" class="reserve box foo" style="display: none; border: none" data-toggle="modal" data-target="#renameModal" onclick="renameForm(this)"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/ .container-fluid -->
+        </nav>
+    </div>
+</header>
+
+<main class="moments">
+    <div class="errorpPage-wrap">
+        <div class="errorpPage-box">
+            <div class="errorpPage-img">
+                <img src="imgs/数据为空2.png" alt="为港口提效，智能化港口码头">
+            </div>
+            <div class="errorpPage-tip">
+                <h3>对不起！没找到待办文档，请联系管理员！</h3>
+                <!--<p>对不起！没找到待办文档，请联系管理员！</p>-->
+            </div>
+            <div class="errorpPage-operate">
+                <a href="javascript:window.opener=null;window.open('','_self');window.close();">关闭页面</a>
+                <a href="javascript:window.location.reload()"><span class="glyphicon glyphicon-refresh"></span>刷新试试</a>
+                <a href="#"><span class="glyphicon glyphicon-home"></span>返回首页</a>
+                <a href="#" onclick="history.go(-1)"><span class="glyphicon glyphicon-repeat"></span>返回上一页</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer id="footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-logo">
+                <a href="http://fp-ai.com/home.html" class="pull-left">
+                    <img src="http://dinkpic1.51ai.pro/logo.png" alt="为港口提效，智能化港口码头">
+                </a>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 right-nav footer_info">
+                <div id="offices-wrap" class="collapse wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <ul class="offices">
+                            <li class="title ai-title">
+                                港口人工智能,集装箱智能化,港口智能化
+                            </li>
+                            <li>
+                                港口人工智能，集装箱智能化，港口智能化的<a href="http://fp-ai.com/">第一太平洋AI</a>实现集装箱智能识别，港口提效，智能化港口码头。<a href="http://fp-ai.com/">第一太平洋AI</a>作为<a href="https://github.com/FPAI/DINK">DINK</a>深度学习框架发布者，掌握港口人工智能，集装箱智能化，港口智能化，智能化港口码头底层技术。在港口人工智能，集装箱智能化中，集装箱智能识别，港口智能决策，智能规划经验丰富。
+                        </ul>
+                    </div>
+                </div>
+                <div id="company-wrap" class="collapse wrapper col-lg-4 col-md-4 col-sm-12 col-xs-12 right-nav">
+                    <div class="row">
+                        <ul class="media-kit">
+                            <li class="title">备案号</li>
+                            <li>
+                                <ul class="sub-list">
+                                    <li><a href="http://www.miitbeian.gov.cn">沪ICP备18040458号-1</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="email-wrap" class="collapse wrapper col-lg-4 col-md-4 col-sm-12 col-xs-12 right-nav">
+                    <div class="row">
+                        <ul class="email">
+                            <li class="title">联系电话</li>
+                            <li>
+                                <ul class="sub-list">
+                                    <li>400-153-0988</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="media-wrap" class="collapse wrapper col-lg-4 col-md-4 col-sm-12 col-xs-12 right-nav">
+                    <div class="row">
+                        <ul class="media-kit">
+                            <li class="title">商务邮箱</li>
+                            <li>
+                                <ul class="sub-list">
+                                    <li>info@fp-ai.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="collapse wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div style="width:300px;margin:0 auto; padding:20px 0;">
+                            <a target="_blank" href=" " style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://dinkpic1.51ai.pro/serve.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011202009007号</p ></a >
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
+                    <div class="row">
+                        <h5>Business Email</h5>
+                        <span class="arrow arrow-add"> info@fp-ai.com</span>
+                    </div>
+                </div>
+                <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
+                    <div class="row">
+                        <h5>CONTACT US</h5>
+                        <span class="arrow arrow-add">400-153-0988</span>
+                    </div>
+                </div>
+                <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
+                    <div class="row">
+                        <h5>Record Number</h5>
+                        <span class="arrow arrow-add"><a href="http://www.miitbeian.gov.cn">沪ICP备18040458号-1  </a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="byton-copyrights byton-copyrights-add copyright" style="padding: 15px 0">
+            <span class="copyright">©2019 第一太平洋AI 版权所有</span>
+        </div>
+        <div style="width:300px;margin:0 auto; padding:20px 0;text-align: center">
+            <a target="_blank" href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://dinkpic1.51ai.pro/serve.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011202009007号</p ></a >
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="commentModal" role="dialog">
+    <div class="modal-dialog inquiry-modal modal-md">
+        <div class="modal-content sign-up-popup">
+            <img src="http://dinkpic1.51ai.pro/logo.png" class="logo" alt="为港口提效，智能化港口码头" height="68" width="74">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <div class="content sign-up-wrapper">
+                <div class="form">
+                    <form id="comment-form" name="general-inquiry" novalidate="novalidate" action="" class="form" target="id_iframe">
+                        <input id="type" name="type" value="2" hidden>
+                        <input id="id" name="id" value="" hidden>
+                        <input id="parent_id" name="parent_id" value="" hidden>
+                        <input id="comment_id" name="comment_id" value="" hidden>
+                        <input id="user_id" name="user_id" value="" hidden>
+                        <div class="full-input">
+                            <textarea id="content" name="content" placeholder="写下你的评论…" onfocus="this.placeholder = ''" onblur="this.placeholder = '写下你的评论…'"  data-msg-required="请输入评论内容" required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="comment-btn" class="box foo square-button-dark">评论</button>
+                        </div>
+                    </form>
+                    <iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe>
+                    <h4 class="success-text">评论成功</h4>
+                    <h4 class="error-text">输入内容有误，请重新输入</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog inquiry-modal modal-md">
+        <!-- Modal content-->
+        <div class="modal-content sign-up-popup">
+                    <span style="display: inline-block">
+                        <img src="http://dinkpic1.51ai.pro/logo.png" class="logo" alt="为港口提效，智能化港口码头" height="68" width="74">
+                    </span>
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <div class="content sign-up-wrapper" id="general-inquiry">
+                <div class="form">
+                    <form id="login-form" name="general-inquiry" novalidate="novalidate" class="sendForm" target="iframe1">
+                        <div class="full-input">
+                            <input class="form-input" type="number" name="phone" placeholder="请输入手机号码" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入手机号码'" data-msg-required="请输入手机号码"  required>
+                            <input class="form-input" type="password" name="password" placeholder="请输入密码" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入密码'" data-msg-required="请输入密码"  required>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="login-btn" class="col-md-6">登录</button>
+                            <button type="button" class="col-md-6 submit" data-toggle="modal" data-target="#registerModal" onclick="register()">注册</button>
+                            <a href="#" class="change" data-toggle="modal" data-target="#registerModal" onclick="register()">忘记密码</a>
+                        </div>
+                    </form>
+                    <iframe id="iframe1" name="id_iframe" style="display:none;"></iframe>
+                    <h4 class="success-text">登录成功</h4>
+                    <h4 class="error-text">输入内容有误，请重新输入</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="registerModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog inquiry-modal modal-md">
+        <!-- Modal content-->
+        <div class="modal-content sign-up-popup">
+                    <span style="display: inline-block">
+                        <img src="http://dinkpic1.51ai.pro/logo.png" class="logo" alt="为港口提效，智能化港口码头" height="68" width="74">
+                    </span>
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <div class="content sign-up-wrapper">
+                <div class="form">
+                    <form id="register-form" name="general-inquiry" novalidate="novalidate" class="sendForm" target="iframe">
+                        <div class="full-input">
+                            <input class="form-input" type="number" name="phone" id="phone" placeholder="请输入手机号码" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入手机号码'" data-msg-required="请输入手机号码"  required>
+                            <input class="form-input" type="text" name="username" placeholder="请输入用户名" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入用户名'" data-msg-required="请输入用户名"  required>
+                            <input class="form-input" type="text" name="password" placeholder="请输入密码" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入密码'" data-msg-required="请输入密码"  required>
+                            <div class="code" style="position: relative;">
+                                <input class="form-input" type="number" name="code" placeholder="请输入验证码" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入验证码'" data-msg-required="请输入验证码"  required>
+                                <button type="button" id="code-btn" class="sendNumber" >获取验证码</button>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="register-btn" class="col-md-12">注册</button>
+                            <a href="#" class="change" data-toggle="modal" data-target="#loginModal" onclick="login()">已有账号，直接登录</a>
+                        </div>
+                    </form>
+                    <iframe id="iframe" name="id_iframe" style="display:none;"></iframe>
+                    <h4 class="success-text">加入成功</h4>
+                    <h4 class="error-text">输入内容有误，请重新输入</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="renameModal" role="dialog" data-backdrop="false">
+    <div class="modal-dialog inquiry-modal modal-md">
+        <!-- Modal content-->
+        <div class="modal-content sign-up-popup">
+                <span style="display: inline-block">
+                    <img src="http://dinkpic1.51ai.pro/logo.png" class="logo" alt="为港口提效，智能化港口码头" height="68" width="74">
+                </span>
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <div class="content sign-up-wrapper">
+                <div class="form">
+                    <form id="rename-form" name="general-inquiry" novalidate="novalidate" class="sendForm"  target="i_iframe">
+                        <div class="full-input">
+                            <input class="form-input" type="text" value="" name="id" id="old-name" disabled>
+                            <input class="form-input" type="text"  name="name" id="new-name" placeholder="请输入新的昵称" onfocus="this.placeholder = ''" onblur="this.placeholder = '请输入新的昵称'" data-msg-required="请输入新的昵称" required>
+                        </div>
+                        <div class="submit">
+                            <button type="submit" id="rename-btn" class="box foo square-button-dark">修改</button>
+                        </div>
+                    </form>
+                    <iframe id="i_iframe" name="id_iframe" style="display:none;"></iframe>
+                    <h4 class="success-text">修改成功</h4>
+                    <h4 class="error-text">输入内容有误，请重新输入</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://dinkweb1.51ai.pro/layui.all.js"></script>
+<script src="http://dinkweb1.51ai.pro/bootstrap.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/jquery.validate.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/jquery.bxslider.4.2.14.min-EDITED.js"></script>
+<script src="http://dinkweb1.51ai.pro/moment.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/moment-timezone-with-data.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/jquery.mCustomScrollbar.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/jquery.matchHeight-min.js"></script>
+<script src="http://dinkweb1.51ai.pro/slick.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/aos.js"></script>
+<script src="http://dinkweb1.51ai.pro/chosen.jquery.min.js"></script>
+<script src="http://dinkweb1.51ai.pro/general-information2.4.js"></script>
+<script src="http://dinkweb1.51ai.pro/onload4.0.js"></script>
+</body>
+</html>
